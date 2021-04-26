@@ -111,7 +111,7 @@ main section.card div div * {
 }
 main section.card div div h5 span {
   margin: 0;
-  color: blue;
+  color: #587aeb;
 }
 main section.card div div a {
   color: #587aeb;
@@ -126,7 +126,7 @@ main section.container {
 main section.container div {
   padding: 30px;
   width: 50%;
-  height: 200px;
+  height: 250px;
   background-size: cover;
   background-position: center;
   position: relative;
