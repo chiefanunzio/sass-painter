@@ -1,15 +1,16 @@
 @import 'variables';
 
 header {
-    height: 80px;
+    height: 70px;
     background-color: $bg-nav;
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 
     ul {
 
@@ -17,8 +18,8 @@ header {
         li {
             display: inline-block;
             color: $color-text;
-            margin-right:15px;
-            
+            margin-right: 15px;
+
         }
     }
 
@@ -38,99 +39,278 @@ header {
 
             img {
                 width: 70px;
-                margin-top:10px;
+                margin-top: 10px;
             }
         }
     }
 
-    
+
 }
 
-main{
+main {
 
-    
-    .jumbotron{
+
+
+    .jumbotron {
         margin-top: 30px;
         height: 380px;
         width: 100%;
         background-image: url('img/bg-home.jpg');
         background-size: cover;
-        div{
-            
+
+        div {
+
             @include container;
             padding: 100px 0;
-            div{
+
+            div {
                 display: block;
                 width: 360px;
                 height: 300px;
                 margin: 0;
                 padding: 0;
-                p{
-                    margin-bottom:25px;
+
+                p {
+                    margin-bottom: 25px;
                 }
-                b{
+
+                b {
                     color: $color-sale;
                     font-style: italic;
                     margin-bottom: 20px;
                 }
-                span{
+
+                span {
                     color: $color-sale;
                     font-size: 0.8em;
                 }
-                div{
+
+                div {
                     margin-top: 20px;
-                    a{
+
+                    a {
                         @include button;
                         margin: 5px;
-                        &:hover{
+
+                        &:hover {
 
                             background-color: $bg-nav;
                             color: $color-text;
                         }
-                        
+
                     }
 
                 }
 
             }
-            
 
-            img{
+
+            img {
                 height: 40px;
                 width: 200px;
                 margin-bottom: 10px;
             }
-            
+
         }
     }
 
-    > div{
+    >div {
         text-align: center;
         margin: 30px 0 20px;
     }
-}
 
-section.card{
+    section.card {
 
-    @include container;
+        div {
+            background-color: rgb(238, 232, 232);
+            padding-bottom: 10px;
+            position: relative;
 
-    div{
-        width: calc(100% / 3 - 10px);
-        img{
-            width: 100%;
-        }
-        div{
-            width: 100%;
-            *{
-                margin: 10px;
+            img {
+                width: 100%;
             }
-            span{
-                margin: 0;
+
+            .name-artist {
+                color: $color-text;
+                position: absolute;
+                top: 125px;
+                right: 10px;
+                font-size: 0.6em;
+            }
+
+            div {
+                width: 100%;
+
+                * {
+                    margin: 10px;
+                }
+
+                h5 {
+
+                    span {
+
+                        margin: 0;
+                        color: blue;
+                    }
+
+                }
+
+
+                a {
+                    color: $color-link;
+                }
+            }
+
+        }
+    }
+
+    .middle {
+        margin: 0 20px;
+    }
+
+    section.container {
+        padding: 50px 0;
+        flex-wrap: wrap;
+
+        div {
+            padding: 30px;
+            width: 50%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: $color-text;
+
+            h3 {
+                margin: 10px 0;
+            }
+
+            button {
+                @include button;
+                background-color: $color-text;
+                margin: 20px 0;
             }
         }
-        a{
-            color: $color-link;
+
+        .card-1 {
+            background-color: $bg-card-1;
         }
+
+        .card-2 {
+            background-image: url('img/wacom-painter.jpg');
+
+
+            img {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                height: 80%;
+            }
+
+            span {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                font-size: 0.6em;
+            }
+        }
+
+        .card-3 {
+
+            background-image: url('img/painter-master.jpg');
+
+            span {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                font-size: 0.6em;
+            }
+
+        }
+
+        .card-4 {
+            background-color: $bg-card-2;
+        }
+
+        .card-5 {
+            background-color: $bg-card-3;
+        }
+
+        .card-6 {
+
+            background-image: url('img/business-education.jpg');
+        }
+
+
+    }
+
+    section.list-link {
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+        div {
+            width: calc(100% / 4);
+
+            h6 {
+                margin-bottom: 10px;
+            }
+
+            ul li {
+                margin-bottom: 5px;
+                a{
+                    color: $color-list-link;
+                }
+                
+            }
+
+            ul {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+            }
+        }
+
+
+
     }
 }
 
+footer {
+    height: 80px;
+    background-color: $bg-nav;
+    padding: 10px 0;
+
+    div {
+        @include container;
+        justify-content: space-between;
+
+        div {
+            ul {
+                width: 100%;
+                display: flex;
+                
+                li {
+                    margin-right: 20px;
+                    img {
+                        height: 50px;
+
+                    }
+                }
+
+            }
+        }
+    }
+    .copy ul{
+        justify-content: flex-end;
+        li{
+            color: $color-list-link;
+            margin-left: 10px;
+            &:last-child{
+                color: $color-text;
+            }
+        }
+    }
+
+}
