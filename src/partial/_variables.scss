@@ -1,7 +1,29 @@
-$bg-color:grey;
+// color root
+$bg-color:rgb(233, 232, 232);
 $bg-nav:black;
+$color-text:white;
 $color-sale:purple;
 $color-link:rgb(16, 61, 209);
 $bg-card-1:rgb(62, 4, 100);
 $bg-card-2:rgb(68, 68, 70);
 $bg-card-3:rgb(83, 83, 255);
+
+// width root
+
+@mixin container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+
+@mixin prg {
+    
+    line-height: 1.3em;
+}
+
+@mixin button {
+    padding: 5px 15px;
+    border: 1px solid black;
+    color: black;
+    
+}

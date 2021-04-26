@@ -1,8 +1,132 @@
-body {
-  background-color: purple;
+header {
+  height: 80px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header ul li {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+}
+header .contact-nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7em;
+}
+header .menu-nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  font-size: 0.8em;
+}
+header .menu-nav ul li img {
+  width: 70px;
+  margin-top: 10px;
 }
 
-h1 {
-  font-size: 50px;
-  color: red;
+main .jumbotron {
+  margin-top: 30px;
+  height: 380px;
+  width: 100%;
+  background-image: url("img/bg-home.jpg");
+  background-size: cover;
+}
+main .jumbotron div {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  padding: 100px 0;
+}
+main .jumbotron div div {
+  display: block;
+  width: 360px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+main .jumbotron div div p {
+  margin-bottom: 25px;
+}
+main .jumbotron div div b {
+  color: purple;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+main .jumbotron div div span {
+  color: purple;
+  font-size: 0.8em;
+}
+main .jumbotron div div div {
+  margin-top: 20px;
+}
+main .jumbotron div div div a {
+  padding: 5px 15px;
+  border: 1px solid black;
+  color: black;
+  margin: 5px;
+}
+main .jumbotron div div div a:hover {
+  background-color: black;
+  color: white;
+}
+main .jumbotron div img {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+main > div {
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+section.card {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+section.card div {
+  width: calc(100% / 3 - 10px);
+}
+section.card div img {
+  width: 100%;
+}
+section.card div div {
+  width: 100%;
+}
+section.card div div * {
+  margin: 10px;
+}
+section.card div div span {
+  margin: 0;
+}
+section.card div a {
+  color: #103dd1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.3em;
 }
