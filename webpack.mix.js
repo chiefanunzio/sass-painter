@@ -4,4 +4,7 @@ mix
     .sass('src/style.scss', '')
     .setPublicPath('dist')
     .copy('src/index.html', 'dist')
+    mix.sass('src/app.scss', 'dist').options({
+        processCssUrls: false
+    });
     ;
